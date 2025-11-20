@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
@@ -15,6 +16,7 @@ import ScrollTop from "./Components/ScrollTop";
 function App() {
   return (
     <div className="font-jost">
+      <Analytics />
       <Navbar />
       <main className="bg-white">
         <section id="home">
