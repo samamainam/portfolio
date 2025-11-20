@@ -32,7 +32,7 @@ export default function About() {
             <div className="p-4 rounded-lg bg-white border shadow-sm">
               <div className="text-sm text-gray-500">Experience</div>
               <div className="font-medium text-gray-800">
-                X+ years of development
+                6+ years of development
               </div>
             </div>
           </div>

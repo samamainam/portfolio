@@ -6,19 +6,22 @@ const realProjects = [
     title: "Listed.ky",
     url: "https://listed.ky/",
     desc: "A modern, professional listing marketplace.",
-    tags: ["WordPress", "Custom Design", "Responsive"],
+    tags: ["MERN", "React.js", "Node.js", "Custom Design", "Responsive"],
+    image: "/src/assets/Listed.ky.png",
   },
   {
     title: "ABZ Salute Fitness",
     url: "https://abzsalutefitness.com/",
-    desc: "Fitness coaching & studio type website.",
+    desc: "Fitness coaching & studio website.",
     tags: ["WordPress", "Fitness Website", "Landing Pages"],
+    image: "/src/assets/abzsalutefitness.png",
   },
   {
     title: "FitBabe",
     url: "https://fitbabe.ky/",
-    desc: "Stylish fitness & wellness website.",
-    tags: ["WordPress", "Responsive", "E-commerce?"],
+    desc: "Stylish fitness & wellness website for Fitbabe (Women-Only Gym).",
+    tags: ["WordPress", "Responsive", "E-commerce"],
+    image: "/src/assets/Fitbabe.png",
   },
 ];
 
@@ -37,10 +40,12 @@ export default function Projects() {
             className="bg-white border rounded-lg overflow-hidden shadow-sm"
           >
             <img
-              // src={placeholder}
+              src={p.image}
               alt={p.title}
-              className="w-full h-40 object-cover"
+              className="w-full h-40 object-cover object-top"
+              style={{ objectPosition: "center top" }}
             />
+
             <div className="p-4">
               <h3 className="font-semibold text-lg">{p.title}</h3>
               <p className="text-sm text-gray-600 mt-1">{p.desc}</p>
@@ -59,32 +64,14 @@ export default function Projects() {
                   href={p.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-3 py-2 text-sm border rounded-md hover:bg-brand hover:text-white transition"
+                  className="px-3 py-2 text-sm border rounded-md bg-brand text-white hover:opacity-95 hover:text-white transition"
                 >
-                  Live
+                  Live Preview
                 </a>
-                <button className="px-3 py-2 text-sm bg-gray-100 rounded-md">
-                  Details
-                </button>
               </div>
             </div>
           </div>
         ))}
-
-        {/* placeholders */}
-        <div className="bg-white border rounded-lg p-6 flex flex-col items-start justify-center">
-          <h3 className="font-semibold">More MERN apps</h3>
-          <p className="text-sm text-gray-600 mt-2">
-            Custom React / Node apps — coming soon
-          </p>
-        </div>
-
-        <div className="bg-white border rounded-lg p-6 flex flex-col items-start justify-center">
-          <h3 className="font-semibold">Upcoming projects</h3>
-          <p className="text-sm text-gray-600 mt-2">
-            Room to add new case studies
-          </p>
-        </div>
       </div>
     </div>
   );

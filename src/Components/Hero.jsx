@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="min-h-[calc(100vh-64px)] flex items-center">
       <div className="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-8">
         <div className="w-full lg:w-1/2">
-          <p className="text-sm text-gray-300 mb-2">Hi, I am</p>
+          <p className="text-sm mb-2">Hi, I am</p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-brand leading-tight">
             Samama Inam
           </h1>

@@ -47,18 +47,24 @@ export default function Contact() {
 
           <div className="mt-6 text-sm text-gray-700">
             <div>
-              <strong>Email:</strong> samama@example.com
+              <strong>Email:</strong>{" "}
+              <a href="mailto:samamamahar@gmail.com" className="text-brand">
+                samamamahar@gmail.com
+              </a>
             </div>
             <div className="mt-2">
               <strong>LinkedIn:</strong>{" "}
-              <a href="#" className="text-brand">
-                linkedin.com/in/samama
+              <a
+                href="https://www.linkedin.com/in/samamainam/"
+                className="text-brand"
+              >
+                linkedin.com/in/samamainam/
               </a>
             </div>
             <div className="mt-2">
               <strong>GitHub:</strong>{" "}
-              <a href="#" className="text-brand">
-                github.com/samama
+              <a href="https://github.com/samamainam" className="text-brand">
+                github.com/samamainam
               </a>
             </div>
           </div>
@@ -120,7 +126,7 @@ export default function Contact() {
               {loading ? "Sending..." : "Send Message"}
             </button>
             <div className="text-sm text-gray-500">
-              Or email: samama@example.com
+              Or email: samamamahar@gmail.com
             </div>
           </div>
         </form>
